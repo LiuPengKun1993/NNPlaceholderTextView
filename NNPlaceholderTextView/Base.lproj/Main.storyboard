@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="poJ-gE-EDc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="IPQ-Nq-u3K">
+            <objects>
+                <navigationController id="poJ-gE-EDc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UwD-VG-s5z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7N1-Tb-ZfI" kind="relationship" relationship="rootViewController" id="oeZ-5C-nU2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIT-Mh-3wD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2496" y="329"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gVf-gU-7ES">
+            <objects>
+                <viewController id="7N1-Tb-ZfI" customClass="NNViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lrs-Ki-1fY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y0S-Ck-gmK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Vd-zK-qhu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NE6-5a-9Ms">
+                                <rect key="frame" x="244" y="285" width="112" height="30"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.57044860050000001" blue="0.70997758190000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="7OD-hU-MXZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="I1X-ef-0bC"/>
+                                </constraints>
+                                <state key="normal" title="点击发表文字">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="senderBtn" destination="7N1-Tb-ZfI" eventType="touchUpInside" id="sfy-CB-fc0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NE6-5a-9Ms" firstAttribute="centerX" secondItem="1Vd-zK-qhu" secondAttribute="centerX" id="JvE-o1-bir"/>
+                            <constraint firstItem="NE6-5a-9Ms" firstAttribute="centerY" secondItem="1Vd-zK-qhu" secondAttribute="centerY" id="g36-sG-FG5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YS1-WB-EPR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Cw-SX-SNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1824" y="300"/>
+        </scene>
+    </scenes>
+</document>
